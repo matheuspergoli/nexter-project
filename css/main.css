@@ -27,6 +27,12 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.heading-1 {
+  line-height: 1;
+  font-size: 4.5rem;
+  color: #f9f7f6;
+}
+
 .heading-2 {
   line-height: 1;
   font-size: 4rem;
@@ -120,6 +126,48 @@ body {
 .header {
   grid-column: full-start/col-end 6;
   background-color: #54483A;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
+  padding: 8rem;
+  padding-top: 4rem;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  justify-content: center;
+  row-gap: 1.5rem;
+}
+.header__logo {
+  height: 3rem;
+  justify-self: center;
+}
+.header__btn {
+  align-self: start;
+  justify-self: start;
+}
+.header__seenon-text {
+  font-size: 1.6rem;
+  color: #aaa;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.header__seenon-text::before, .header__seenon-text::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: currentColor;
+}
+.header__seenon-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  column-gap: 3rem;
+}
+.header__seenon-logos img {
+  height: 2.5rem;
+  filter: brightness(70%);
 }
 
 .realtors {
